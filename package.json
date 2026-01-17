@@ -25,6 +25,15 @@
         "nsis": {
             "oneClick": false
         },
+        "mac": {
+            "target": "dmg",
+            "icon": "res/icon/app.png"
+        },
+        "linux": {
+            "target": [ "AppImage", "deb" ],
+            "icon": "res/icon/app.png",
+            "category": "Utility"
+        },
         "publish": {
             "provider": "github",
             "releaseType": "draft"
