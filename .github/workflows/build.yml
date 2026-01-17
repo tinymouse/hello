@@ -22,7 +22,8 @@ jobs:
             # Install dependencies
             -   run: npm install
 
-            # Release build
+            # Build & Release
             -   uses: samuelmeuli/action-electron-builder@v1 
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
+                    release: ${{ startsWith(github.ref, 'refs/tags/v') }}
