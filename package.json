@@ -1,6 +1,6 @@
 {
     "name": "helloelectron",
-    "version": "0.2.1",
+    "version": "0.2.0",
     "description": "",
     "license": "ISC",
     "author": "Tiny Mouse",
@@ -27,9 +27,7 @@
         },
         "publish": {
             "provider": "github",
-            "owner": "tinymouse",
-            "repo": "hello",
-            "releaseType": "release"
+            "releaseType": "draft"
         }
     }
 }
