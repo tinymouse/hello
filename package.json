@@ -24,6 +24,12 @@
         },
         "nsis": {
             "oneClick": false
-        }
+        },
+        "publish": [
+            {
+                "provider": "github",
+                "releaseType": "release"
+            }
+        ]
     }
 }

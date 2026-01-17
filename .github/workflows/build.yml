@@ -1,0 +1,28 @@
+name: build
+
+on:
+    push:
+
+jobs:
+    build:
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [windows-latest]
+
+        steps:
+            # Checkout the repository
+            -   uses: actions/checkout@main
+
+            # Set up Node.js
+            -   uses: actions/setup-node@main
+                with:
+                    node-version: '22'
+
+            # Install dependencies
+            -   run: npm install
+
+            # Release build
+            -   run: npm run build
+                env:
+                    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
