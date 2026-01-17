@@ -23,6 +23,6 @@ jobs:
             -   run: npm install
 
             # Release build
-            -   run: npm run build
-                env:
-                    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            -   uses: samuelmeuli/action-electron-builder@v1 
+                with:
+                    github_token: ${{ secrets.GITHUB_TOKEN }}
