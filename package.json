@@ -2,8 +2,12 @@
     "name": "helloelectron",
     "version": "0.2.0",
     "description": "",
+    "homepage": "https://github.com/tinymouse/ezgv",
+    "author": {
+        "name": "Tiny Mouse",
+        "email": "khc04052@nifty.com"
+    },
     "license": "ISC",
-    "author": "Tiny Mouse",
     "type": "commonjs",
     "main": "src/main.js",
     "devDependencies": {
