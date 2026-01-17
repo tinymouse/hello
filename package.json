@@ -25,11 +25,11 @@
         "nsis": {
             "oneClick": false
         },
-        "publish": [
-            {
-                "provider": "github",
-                "releaseType": "release"
-            }
-        ]
+        "publish": {
+            "provider": "github",
+            "owner": "tinymouse",
+            "repo": "hello",
+            "releaseType": "release"
+        }
     }
 }
