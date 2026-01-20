@@ -1,8 +1,8 @@
 {
-    "name": "helloelectron",
+    "name": "hello",
     "version": "0.2.0",
     "description": "",
-    "homepage": "https://github.com/tinymouse/ezgv",
+    "homepage": "https://github.com/tinymouse/hello",
     "author": {
         "name": "Tiny Mouse",
         "email": "khc04052@nifty.com"
@@ -17,7 +17,7 @@
     "dependencies": {
     },
     "scripts": {
-        "build": "electron-builder"
+        "build": "electron-builder build"
     },
     "build": {
         "appId": "com.electron.hello",
@@ -34,13 +34,13 @@
             "icon": "res/icon/app.png"
         },
         "linux": {
-            "target": [ "AppImage", "deb" ],
+            "target": "deb",
             "icon": "res/icon/app.png",
             "category": "Utility"
         },
         "publish": {
             "provider": "github",
-            "releaseType": "draft"
+            "releaseType": "release"
         }
     }
 }
